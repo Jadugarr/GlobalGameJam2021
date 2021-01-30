@@ -71,8 +71,10 @@ MonoBehaviour:
   movementSpeed: 5
   jumpForce: 750
   canJump: 0
+  canThrow: 0
   headRendererPrefab: {fileID: 3066675684447855886, guid: d23472a2b7bc2a746b01655655f53d84, type: 3}
   legsRendererPrefab: {fileID: 5203956985787250640, guid: 9c4eeae867815f743a938a9ac1acb2b2, type: 3}
+  armsRendererPrefab: {fileID: 2959244831959674993, guid: d032f57c937414a4bb7f24a6d57a2a52, type: 3}
 --- !u!114 &7158120832608226254
 MonoBehaviour:
   m_ObjectHideFlags: 0

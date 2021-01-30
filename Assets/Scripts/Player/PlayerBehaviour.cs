@@ -12,9 +12,11 @@ namespace GGJ2021.Player
         [SerializeField] private float jumpForce;
 
         [SerializeField] private bool canJump;
+        [SerializeField] private bool canThrow;
 
         [SerializeField] private GameObject headRendererPrefab;
         [SerializeField] private GameObject legsRendererPrefab;
+        [SerializeField] private GameObject armsRendererPrefab;
 
         private Vector3 currentMovement = Vector3.zero;
         private ContactFilter2D _contactFilter2D;
@@ -62,13 +64,23 @@ namespace GGJ2021.Player
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (other.CompareTag("Legs"))
+            if (other.CompareTag("Legs") && !canJump && !canThrow)
             {
                 canJump = true;
                 Destroy(other.gameObject);
                 
                 Destroy(_boxCollider2D.gameObject);
                 GameObject newRenderer = Instantiate(legsRendererPrefab, transform);
+                _boxCollider2D = newRenderer.GetComponent<BoxCollider2D>();
+            }
+
+            if (other.CompareTag("Arms") && !canThrow && canJump)
+            {
+                canThrow = true;
+                Destroy(other.gameObject);
+                
+                Destroy(_boxCollider2D.gameObject);
+                GameObject newRenderer = Instantiate(armsRendererPrefab, transform);
                 _boxCollider2D = newRenderer.GetComponent<BoxCollider2D>();
             }
         }
