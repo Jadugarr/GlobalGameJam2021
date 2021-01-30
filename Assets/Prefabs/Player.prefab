@@ -211,7 +211,19 @@ MonoBehaviour:
     m_ActionId: 62d5b974-6de3-40a1-a774-611e0b17842b
     m_ActionName: Player/Jump[/Keyboard/space]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8670639830672821145}
+        m_TargetAssemblyTypeName: GGJ2021.Player.ReticleBehaviour, Assembly-CSharp
+        m_MethodName: OnGamePadMove
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 34c02d21-9cfe-4a5d-a0d3-502982616fbb
     m_ActionName: Player/MoveReticle[/DualShock4GamepadHID/rightStick]
   m_NeverAutoSwitchControlSchemes: 0

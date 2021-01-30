@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -131,7 +132,9 @@ namespace GGJ2021.Player
 
             if (other.CompareTag("Heart"))
             {
-                SceneManager.LoadScene("Game");
+                HeartCollectibleBehaviour heartCollectibleBehaviour =
+                    other.gameObject.GetComponent<HeartCollectibleBehaviour>();
+                SceneManager.LoadScene(heartCollectibleBehaviour.NextLevelName);
             }
 
             if (other.CompareTag("Hazard"))
