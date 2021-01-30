@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 namespace GGJ2021.Player
 {
@@ -22,6 +23,8 @@ namespace GGJ2021.Player
 
         [SerializeField] private GameObject legsCollectiblePrefab;
         [SerializeField] private GameObject armsCollectiblePrefab;
+
+        [SerializeField] private ReticleBehaviour _reticleBehaviour;
 
         private Vector3 currentMovement = Vector3.zero;
         private ContactFilter2D _contactFilter2D;
@@ -54,10 +57,10 @@ namespace GGJ2021.Player
         {
             if (callbackContext.performed && canThrow)
             {
-                Vector2 currentMousePosition = Mouse.current.position.ReadValue();
-                Vector2 worldPoint = Camera.main.ScreenToWorldPoint(currentMousePosition);
+                Vector2 reticlePosition = _reticleBehaviour.gameObject.transform.position;
 
-                Vector2 direction = (worldPoint - (Vector2)transform.position).normalized;
+                Vector2 direction = (reticlePosition - (Vector2)transform.position).normalized;
+                _rigidbody2D.velocity = Vector2.zero;
                 _rigidbody2D.AddForce(direction * throwForce);
                 
                 Destroy(_boxCollider2D.gameObject);
@@ -66,6 +69,7 @@ namespace GGJ2021.Player
 
                 canJump = false;
                 canThrow = false;
+                _reticleBehaviour.gameObject.SetActive(false);
                 
                 SpawnCollectible(armsCollectiblePrefab, Vector2.left);
                 SpawnCollectible(legsCollectiblePrefab, Vector2.right);
@@ -117,11 +121,22 @@ namespace GGJ2021.Player
             if (other.CompareTag("Arms") && !canThrow && canJump)
             {
                 canThrow = true;
+                _reticleBehaviour.gameObject.SetActive(true);
                 Destroy(other.gameObject.transform.parent.gameObject);
                 
                 Destroy(_boxCollider2D.gameObject);
                 GameObject newRenderer = Instantiate(armsRendererPrefab, transform);
                 _boxCollider2D = newRenderer.GetComponent<BoxCollider2D>();
+            }
+
+            if (other.CompareTag("Heart"))
+            {
+                SceneManager.LoadScene("Game");
+            }
+
+            if (other.CompareTag("Hazard"))
+            {
+                SceneManager.LoadScene("Game");
             }
         }
 
