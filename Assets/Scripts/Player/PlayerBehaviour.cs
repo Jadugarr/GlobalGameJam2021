@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 namespace GGJ2021.Player
 {
@@ -126,6 +127,11 @@ namespace GGJ2021.Player
                 Destroy(_boxCollider2D.gameObject);
                 GameObject newRenderer = Instantiate(armsRendererPrefab, transform);
                 _boxCollider2D = newRenderer.GetComponent<BoxCollider2D>();
+            }
+
+            if (other.CompareTag("Heart"))
+            {
+                SceneManager.LoadScene("Game");
             }
         }
 
