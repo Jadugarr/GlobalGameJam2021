@@ -316,6 +316,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerObject: {fileID: 4358863840703618663}
   maxDistance: 5
+  reticleRenderer: {fileID: 4632560734895785792}
 --- !u!1001 &1344205826204575255
 PrefabInstance:
   m_ObjectHideFlags: 0
