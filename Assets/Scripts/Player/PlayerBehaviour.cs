@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -29,12 +30,14 @@ namespace GGJ2021.Player
         private Vector3 currentMovement = Vector3.zero;
         private ContactFilter2D _contactFilter2D;
         private BoxCollider2D _boxCollider2D;
+        private Animator _animatorController;
 
         private void Start()
         {
             _contactFilter2D = new ContactFilter2D();
             _contactFilter2D.SetLayerMask(LayerMask.GetMask($"Ground"));
             _boxCollider2D = GetComponentInChildren<BoxCollider2D>();
+            _animatorController = GetComponentInChildren<Animator>();
         }
 
         public void OnMovement(InputAction.CallbackContext callbackContext)
@@ -66,6 +69,7 @@ namespace GGJ2021.Player
                 Destroy(_boxCollider2D.gameObject);
                 GameObject newRenderer = Instantiate(headRendererPrefab, transform);
                 _boxCollider2D = newRenderer.GetComponent<BoxCollider2D>();
+                _animatorController = GetComponentInChildren<Animator>();
 
                 canJump = false;
                 canThrow = false;
@@ -83,20 +87,20 @@ namespace GGJ2021.Player
 
         private void ProcessMovement()
         {
-            if (currentMovement == Vector3.zero)
+            if (currentMovement != Vector3.zero)
             {
-                return;
-            }
-            
-            bool sameDirection = currentMovement.x < 0f && _rigidbody2D.velocity.x < 0f ||
-                                 currentMovement.x > 0f && _rigidbody2D.velocity.x > 0f;
+                bool sameDirection = currentMovement.x < 0f && _rigidbody2D.velocity.x < 0f ||
+                                     currentMovement.x > 0f && _rigidbody2D.velocity.x > 0f;
 
-            if (sameDirection && Mathf.Abs(_rigidbody2D.velocity.x) >= maxMovementSpeed)
-            {
-                return;
+                if (sameDirection && Mathf.Abs(_rigidbody2D.velocity.x) >= maxMovementSpeed)
+                {
+                    return;
+                }
+            
+                _rigidbody2D.velocity += new Vector2(currentMovement.x, currentMovement.y);
             }
             
-            _rigidbody2D.velocity += new Vector2(currentMovement.x, currentMovement.y);
+            _animatorController.SetFloat("MovementSpeed", Mathf.Abs(_rigidbody2D.velocity.x));
         }
 
         private bool IsOnGround()
@@ -116,6 +120,7 @@ namespace GGJ2021.Player
                 Destroy(_boxCollider2D.gameObject);
                 GameObject newRenderer = Instantiate(legsRendererPrefab, transform);
                 _boxCollider2D = newRenderer.GetComponent<BoxCollider2D>();
+                _animatorController = GetComponentInChildren<Animator>();
             }
 
             if (other.CompareTag("Arms") && !canThrow && canJump)
@@ -127,6 +132,7 @@ namespace GGJ2021.Player
                 Destroy(_boxCollider2D.gameObject);
                 GameObject newRenderer = Instantiate(armsRendererPrefab, transform);
                 _boxCollider2D = newRenderer.GetComponent<BoxCollider2D>();
+                _animatorController = GetComponentInChildren<Animator>();
             }
 
             if (other.CompareTag("Heart"))
