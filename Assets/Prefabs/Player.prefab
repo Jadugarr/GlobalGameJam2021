@@ -68,13 +68,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody2D: {fileID: 7832189139238036807}
-  movementSpeed: 5
+  maxMovementSpeed: 7.5
+  accelerationSpeed: 50
   jumpForce: 750
+  throwForce: 1000
   canJump: 0
   canThrow: 0
   headRendererPrefab: {fileID: 3066675684447855886, guid: d23472a2b7bc2a746b01655655f53d84, type: 3}
   legsRendererPrefab: {fileID: 5203956985787250640, guid: 9c4eeae867815f743a938a9ac1acb2b2, type: 3}
   armsRendererPrefab: {fileID: 2959244831959674993, guid: d032f57c937414a4bb7f24a6d57a2a52, type: 3}
+  legsCollectiblePrefab: {fileID: 7103774329148650050, guid: 10eafe2b534e21b4e8d75df7d4589231, type: 3}
+  armsCollectiblePrefab: {fileID: 1525042166711408457, guid: 2fc4e8e23da081247adec3c77f4b8077, type: 3}
 --- !u!114 &7158120832608226254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,7 +125,19 @@ MonoBehaviour:
     m_ActionId: 14e2d354-70e7-42b5-b87d-d53946a21bb7
     m_ActionName: Player/Look[/Mouse/delta]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8735356073100765498}
+        m_TargetAssemblyTypeName: GGJ2021.Player.PlayerBehaviour, Assembly-CSharp
+        m_MethodName: OnFire
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 3609e122-0023-43d4-b4e5-26ebc3165e43
     m_ActionName: Player/Fire[/Mouse/leftButton]
   - m_PersistentCalls:
