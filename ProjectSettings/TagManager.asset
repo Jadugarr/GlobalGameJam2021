@@ -8,6 +8,7 @@ TagManager:
   - Legs
   - Arms
   - Heart
+  - Hazard
   layers:
   - Default
   - TransparentFX

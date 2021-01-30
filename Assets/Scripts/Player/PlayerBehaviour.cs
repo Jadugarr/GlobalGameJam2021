@@ -133,6 +133,11 @@ namespace GGJ2021.Player
             {
                 SceneManager.LoadScene("Game");
             }
+
+            if (other.CompareTag("Hazard"))
+            {
+                SceneManager.LoadScene("Game");
+            }
         }
 
         private void SpawnCollectible(GameObject collectible, Vector2 direction)
