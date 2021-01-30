@@ -59,6 +59,7 @@ namespace GGJ2021.Player
                 Vector2 reticlePosition = _reticleBehaviour.gameObject.transform.position;
 
                 Vector2 direction = (reticlePosition - (Vector2)transform.position).normalized;
+                _rigidbody2D.velocity = Vector2.zero;
                 _rigidbody2D.AddForce(direction * throwForce);
                 
                 Destroy(_boxCollider2D.gameObject);
