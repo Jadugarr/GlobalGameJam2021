@@ -2043,6 +2043,17 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
+--- !u!114 &2119131656 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8670639830672821145, guid: 63ff4617b6dd01c4481f7e25922dd15b, type: 3}
+  m_PrefabInstance: {fileID: 7158120832608226252}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5935dbf27af4f3988412a4b0815137c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4617110221029402066
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2167,6 +2178,46 @@ PrefabInstance:
     - target: {fileID: 4358863840703618663, guid: 63ff4617b6dd01c4481f7e25922dd15b, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7158120832608226254, guid: 63ff4617b6dd01c4481f7e25922dd15b, type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7158120832608226254, guid: 63ff4617b6dd01c4481f7e25922dd15b, type: 3}
+      propertyPath: m_ActionEvents.Array.data[14].m_ActionId
+      value: 34c02d21-9cfe-4a5d-a0d3-502982616fbb
+      objectReference: {fileID: 0}
+    - target: {fileID: 7158120832608226254, guid: 63ff4617b6dd01c4481f7e25922dd15b, type: 3}
+      propertyPath: m_ActionEvents.Array.data[14].m_ActionName
+      value: Player/MoveReticle[/DualShock4GamepadHID/rightStick]
+      objectReference: {fileID: 0}
+    - target: {fileID: 7158120832608226254, guid: 63ff4617b6dd01c4481f7e25922dd15b, type: 3}
+      propertyPath: m_ActionEvents.Array.data[14].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7158120832608226254, guid: 63ff4617b6dd01c4481f7e25922dd15b, type: 3}
+      propertyPath: m_ActionEvents.Array.data[14].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7158120832608226254, guid: 63ff4617b6dd01c4481f7e25922dd15b, type: 3}
+      propertyPath: m_ActionEvents.Array.data[14].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2119131656}
+    - target: {fileID: 7158120832608226254, guid: 63ff4617b6dd01c4481f7e25922dd15b, type: 3}
+      propertyPath: m_ActionEvents.Array.data[14].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7158120832608226254, guid: 63ff4617b6dd01c4481f7e25922dd15b, type: 3}
+      propertyPath: m_ActionEvents.Array.data[14].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnGamePadMove
+      objectReference: {fileID: 0}
+    - target: {fileID: 7158120832608226254, guid: 63ff4617b6dd01c4481f7e25922dd15b, type: 3}
+      propertyPath: m_ActionEvents.Array.data[14].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GGJ2021.Player.ReticleBehaviour, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7158120832608226254, guid: 63ff4617b6dd01c4481f7e25922dd15b, type: 3}
+      propertyPath: m_ActionEvents.Array.data[14].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 9172560806533982951, guid: 63ff4617b6dd01c4481f7e25922dd15b, type: 3}
       propertyPath: m_RootOrder
