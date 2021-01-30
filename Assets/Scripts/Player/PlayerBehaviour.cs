@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 namespace GGJ2021.Player
 {
@@ -59,6 +60,7 @@ namespace GGJ2021.Player
                 Vector2 reticlePosition = _reticleBehaviour.gameObject.transform.position;
 
                 Vector2 direction = (reticlePosition - (Vector2)transform.position).normalized;
+                _rigidbody2D.velocity = Vector2.zero;
                 _rigidbody2D.AddForce(direction * throwForce);
                 
                 Destroy(_boxCollider2D.gameObject);
@@ -125,6 +127,16 @@ namespace GGJ2021.Player
                 Destroy(_boxCollider2D.gameObject);
                 GameObject newRenderer = Instantiate(armsRendererPrefab, transform);
                 _boxCollider2D = newRenderer.GetComponent<BoxCollider2D>();
+            }
+
+            if (other.CompareTag("Heart"))
+            {
+                SceneManager.LoadScene("Game");
+            }
+
+            if (other.CompareTag("Hazard"))
+            {
+                SceneManager.LoadScene("Game");
             }
         }
 
