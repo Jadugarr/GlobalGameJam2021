@@ -1,0 +1,828 @@
+fileFormatVersion: 2
+guid: e05a0d4a15529be43929a9354d407ad4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5791873058546158736
+    second: walk_animation_armfull_1_0
+  - first:
+      213: -5537569075369575922
+    second: walk_animation_armfull_1_1
+  - first:
+      213: 7904843108475218622
+    second: walk_animation_armfull_1_2
+  - first:
+      213: -3329171681979130750
+    second: walk_animation_armfull_1_3
+  - first:
+      213: -9143329501753210995
+    second: walk_animation_armfull_1_4
+  - first:
+      213: 8665899826153331693
+    second: walk_animation_armfull_1_5
+  - first:
+      213: -8072654720365081505
+    second: walk_animation_armfull_1_6
+  - first:
+      213: -8870340664025078429
+    second: walk_animation_armfull_1_7
+  - first:
+      213: 802484999142154533
+    second: walk_animation_armfull_1_8
+  - first:
+      213: -3020266861531615969
+    second: walk_animation_armfull_1_9
+  - first:
+      213: 444872529406099162
+    second: walk_animation_armfull_1_10
+  - first:
+      213: 2150501928102082019
+    second: walk_animation_armfull_1_11
+  - first:
+      213: -6570461398595170010
+    second: walk_animation_armfull_1_12
+  - first:
+      213: -2587361273420452758
+    second: walk_animation_armfull_1_13
+  - first:
+      213: 953045918936278259
+    second: walk_animation_armfull_1_14
+  - first:
+      213: 4967097675300321830
+    second: walk_animation_armfull_1_15
+  - first:
+      213: -4766366501880683349
+    second: walk_animation_armfull_1_16
+  - first:
+      213: -3378068662706275962
+    second: walk_animation_armfull_1_17
+  - first:
+      213: 6161503505459909208
+    second: walk_animation_armfull_1_18
+  - first:
+      213: -1326261761839361191
+    second: walk_animation_armfull_1_19
+  - first:
+      213: -3020522160960098660
+    second: walk_animation_armfull_1_20
+  - first:
+      213: 8175612060719122151
+    second: walk_animation_armfull_1_21
+  - first:
+      213: 7610641392595456163
+    second: walk_animation_armfull_1_22
+  - first:
+      213: 8416012438298449895
+    second: walk_animation_armfull_1_23
+  - first:
+      213: 466414300078500326
+    second: walk_animation_armfull_1_24
+  - first:
+      213: -7831491443114276947
+    second: walk_animation_armfull_1_25
+  - first:
+      213: -4277804502476365566
+    second: walk_animation_armfull_1_26
+  - first:
+      213: -6822139105793965303
+    second: walk_animation_armfull_1_27
+  - first:
+      213: -3306386904565891593
+    second: walk_animation_armfull_1_28
+  - first:
+      213: 108220944661164806
+    second: walk_animation_armfull_1_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: walk_animation_armfull_1_0
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 1731
+        width: 147
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09c8cce2cddd06050800000000000000
+      internalID: 5791873058546158736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_animation_armfull_1_1
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 1731
+        width: 140
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0a7867e34a9623b0800000000000000
+      internalID: -5537569075369575922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_animation_armfull_1_2
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 1731
+        width: 136
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eba2cddece4a3bd60800000000000000
+      internalID: 7904843108475218622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_animation_armfull_1_3
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 1733
+        width: 157
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c18537ef76cc1d0800000000000000
+      internalID: -3329171681979130750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_animation_armfull_1_4
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 1733
+        width: 160
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8786a7f24e5c1180800000000000000
+      internalID: -9143329501753210995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_animation_armfull_1_5
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 1733
+        width: 160
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deb1dfc5af5734870800000000000000
+      internalID: 8665899826153331693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_animation_armfull_1_6
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 1735
+        width: 195
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5c42467d4b28ff80800000000000000
+      internalID: -8072654720365081505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_animation_armfull_1_7
+      rect:
+        serializedVersion: 2
+        x: 1781
+        y: 1735
+        width: 196
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3652514c92836e480800000000000000
+      internalID: -8870340664025078429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_animation_armfull_1_8
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1386
+        width: 192
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 521a27fdadff22b00800000000000000
+      internalID: 802484999142154533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_animation_armfull_1_9
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 1378
+        width: 165
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d268f9a4bd516d0800000000000000
+      internalID: -3020266861531615969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_animation_armfull_1_10
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 1379
+        width: 146
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade749d55318c2600800000000000000
+      internalID: 444872529406099162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_animation_armfull_1_11
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 1379
+        width: 138
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e531591c1e18dd10800000000000000
+      internalID: 2150501928102082019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_animation_armfull_1_12
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 1378
+        width: 159
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62191567b2801d4a0800000000000000
+      internalID: -6570461398595170010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_animation_armfull_1_13
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 1378
+        width: 166
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6ceb2851a8d71cd0800000000000000
+      internalID: -2587361273420452758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_animation_armfull_1_14
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 1378
+        width: 168
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f425dcb636e93d00800000000000000
+      internalID: 953045918936278259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_animation_armfull_1_15
+      rect:
+        serializedVersion: 2
+        x: 1759
+        y: 1378
+        width: 169
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62ab1f4d40daee440800000000000000
+      internalID: 4967097675300321830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_animation_armfull_1_16
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1028
+        width: 150
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba4a41a7be67addb0800000000000000
+      internalID: -4766366501880683349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_animation_armfull_1_17
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 1027
+        width: 147
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6897384f270be11d0800000000000000
+      internalID: -3378068662706275962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_animation_armfull_1_18
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1028
+        width: 145
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 852134d0bce028550800000000000000
+      internalID: 6161503505459909208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_animation_armfull_1_19
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 1029
+        width: 133
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 953916654fb289de0800000000000000
+      internalID: -1326261761839361191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_animation_armfull_1_20
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 1031
+        width: 135
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9e27c71913f416d0800000000000000
+      internalID: -3020522160960098660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_animation_armfull_1_21
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 1031
+        width: 142
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e6009c5adb957170800000000000000
+      internalID: 8175612060719122151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_animation_armfull_1_22
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 1031
+        width: 144
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a0598e060e6e9960800000000000000
+      internalID: 7610641392595456163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_animation_armfull_1_23
+      rect:
+        serializedVersion: 2
+        x: 1795
+        y: 1033
+        width: 167
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e75c0209beabc470800000000000000
+      internalID: 8416012438298449895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_animation_armfull_1_24
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 683
+        width: 182
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e96752b559097600800000000000000
+      internalID: 466414300078500326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_animation_armfull_1_25
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 682
+        width: 166
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da789a78604f05390800000000000000
+      internalID: -7831491443114276947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_animation_armfull_1_26
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 682
+        width: 167
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2016453487f22a4c0800000000000000
+      internalID: -4277804502476365566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_animation_armfull_1_27
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 682
+        width: 162
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90389d6e0a4e251a0800000000000000
+      internalID: -6822139105793965303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_animation_armfull_1_28
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 681
+        width: 170
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fdb857d0aa5d12d0800000000000000
+      internalID: -3306386904565891593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_animation_armfull_1_29
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 681
+        width: 167
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60339c3306a708100800000000000000
+      internalID: 108220944661164806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
