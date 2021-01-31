@@ -29,6 +29,7 @@ namespace GGJ2021.Player
         private ContactFilter2D _contactFilter2D;
         private BoxCollider2D _boxCollider2D;
         private Animator _animator;
+        private SpriteRenderer _spriteRenderer;
 
         private void Start()
         {
@@ -36,6 +37,7 @@ namespace GGJ2021.Player
             _contactFilter2D.SetLayerMask(LayerMask.GetMask($"Ground"));
             _boxCollider2D = GetComponentInChildren<BoxCollider2D>();
             _animator = GetComponentInChildren<Animator>();
+            _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         }
 
         public void OnMovement(InputAction.CallbackContext callbackContext)
@@ -68,6 +70,7 @@ namespace GGJ2021.Player
                 GameObject newRenderer = Instantiate(headRendererPrefab, transform);
                 _boxCollider2D = newRenderer.GetComponent<BoxCollider2D>();
                 _animator = newRenderer.GetComponent<Animator>();
+                _spriteRenderer = newRenderer.GetComponent<SpriteRenderer>();
 
                 canJump = false;
                 canThrow = false;
@@ -89,6 +92,7 @@ namespace GGJ2021.Player
             {
                 bool sameDirection = currentMovement.x < 0f && _rigidbody2D.velocity.x < 0f ||
                                      currentMovement.x > 0f && _rigidbody2D.velocity.x > 0f;
+                _spriteRenderer.flipX = currentMovement.x < 0f;
 
                 if (sameDirection && Mathf.Abs(_rigidbody2D.velocity.x) >= maxMovementSpeed)
                 {
@@ -119,6 +123,7 @@ namespace GGJ2021.Player
                 GameObject newRenderer = Instantiate(legsRendererPrefab, transform);
                 _boxCollider2D = newRenderer.GetComponent<BoxCollider2D>();
                 _animator = newRenderer.GetComponent<Animator>();
+                _spriteRenderer = newRenderer.GetComponent<SpriteRenderer>();
             }
 
             if (other.CompareTag("Arms") && !canThrow && canJump)
@@ -131,6 +136,7 @@ namespace GGJ2021.Player
                 GameObject newRenderer = Instantiate(armsRendererPrefab, transform);
                 _boxCollider2D = newRenderer.GetComponent<BoxCollider2D>();
                 _animator = newRenderer.GetComponent<Animator>();
+                _spriteRenderer = newRenderer.GetComponent<SpriteRenderer>();
             }
 
             if (other.CompareTag("Heart"))
