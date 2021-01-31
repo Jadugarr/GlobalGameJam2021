@@ -69,8 +69,8 @@ namespace GGJ2021.Player
                 Destroy(_boxCollider2D.gameObject);
                 GameObject newRenderer = Instantiate(headRendererPrefab, transform);
                 _boxCollider2D = newRenderer.GetComponent<BoxCollider2D>();
-                _animator = newRenderer.GetComponent<Animator>();
-                _spriteRenderer = newRenderer.GetComponent<SpriteRenderer>();
+                _animator = newRenderer.GetComponentInChildren<Animator>();
+                _spriteRenderer = newRenderer.GetComponentInChildren<SpriteRenderer>();
 
                 canJump = false;
                 canThrow = false;
@@ -122,8 +122,8 @@ namespace GGJ2021.Player
                 Destroy(_boxCollider2D.gameObject);
                 GameObject newRenderer = Instantiate(legsRendererPrefab, transform);
                 _boxCollider2D = newRenderer.GetComponent<BoxCollider2D>();
-                _animator = newRenderer.GetComponent<Animator>();
-                _spriteRenderer = newRenderer.GetComponent<SpriteRenderer>();
+                _animator = newRenderer.GetComponentInChildren<Animator>();
+                _spriteRenderer = newRenderer.GetComponentInChildren<SpriteRenderer>();
             }
 
             if (other.CompareTag("Arms") && !canThrow && canJump)
@@ -135,8 +135,8 @@ namespace GGJ2021.Player
                 Destroy(_boxCollider2D.gameObject);
                 GameObject newRenderer = Instantiate(armsRendererPrefab, transform);
                 _boxCollider2D = newRenderer.GetComponent<BoxCollider2D>();
-                _animator = newRenderer.GetComponent<Animator>();
-                _spriteRenderer = newRenderer.GetComponent<SpriteRenderer>();
+                _animator = newRenderer.GetComponentInChildren<Animator>();
+                _spriteRenderer = newRenderer.GetComponentInChildren<SpriteRenderer>();
             }
 
             if (other.CompareTag("Heart"))
